@@ -6,11 +6,20 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 .flex {
     display: flex;
     gap : var(--gap, 1.5rem);
+}
+
+.grid {
+    display: grid;
+}
+
+.text-color {
+    color: #D0D6F9;
 }
 
 /* HEADER */
@@ -57,7 +66,7 @@ body {
 }
 
 .active, .navs:hover {
-    font-weight: 800;
+    border-bottom: 2px solid #fff;
 }
 
 @media (max-width: 42em){
@@ -96,7 +105,7 @@ body {
     }
 }
 
-@media (min-width: 42em) and (max-width: 50em){
+@media (min-width: 42em) and (max-width: 64em){
     .primary-navigation a > [aria-hidden="true"] {
         display: none;
     }
@@ -126,7 +135,6 @@ body {
 }
 
 .text-wrapper {
-    color: #D0D6F9;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     grid-column-start: 1;
     grid-column-end: 3;
@@ -183,15 +191,38 @@ body {
     }
 }
 
-@media (min-width:50em) and (max-width: 60em) {
+@media (min-width:50em) and (max-width: 64em) {
+    .text {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        margin-inline-start: 30%;
+        margin-inline-end: 30%;
+    }
+
+    .text-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .explore-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
     .title {
         font-size: 6.175rem;
+        text-align: center;
+        min-width: 100% !important;
     }
     .firts {
         font-size: 1rem;
+        text-align: center;
+        min-width: 100%;
     }
     .content {
         font-size: .8rem;
+        max-width: 100%;
+        text-align: center;
     }
 }
 
@@ -235,4 +266,44 @@ body {
     .text-wrapper {
         display: grid;
     }
+}
+
+.destiny-section {
+    grid-template-rows: repeat(2, auto);
+    width: 88%;
+    margin: auto;
+    margin-top: 3rem;
+    height: auto;
+    gap: 3rem;
+}
+
+.choose-destination {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 1/1;
+}
+
+.choose-span {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.title-destination {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.wrapper-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2/2;
+    gap: 2rem;
+    grid-row: 2/2;
+}
+
+.last-data {
+    grid-row: 4;
+}
+
+.img-holder {
+    grid-row: 2/2;
 }

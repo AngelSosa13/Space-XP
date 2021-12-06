@@ -3,35 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/moon.css" type="text/css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="moon-body">
+  <header class="menu-header flex">
+    <div>
+      <a href="#">
+        <img src="../assets/shared/logo.svg" alt="logo-img" class="logo">
+      </a>  
+    </div>
+    <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only"></span>
+    </button> 
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="navs"><a href="../index.html"><span aria-hidden="true">01</span>Home</a></li>
+        <li class="navs active"><a href="#"><span aria-hidden="true">02</span>Destination</a></li>
+        <li class="navs"><a href="#"><span aria-hidden="true">03</span>Crew</a></li>
+        <li class="navs"><a href="#"><span aria-hidden="true">04</span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="destiny-section grid">
+    <div class="choose-destination">
+      <span class="choose-span text-color">01 Pick your destination</span>
+    </div>
+    <div class="wrapper-content grid">
+      <nav class="destiny-nav">
+        <ul id="destiny-navigation" data-visible="false" class="destiny-navigation flex">
+          <li class="navs active"><a href="#"><span aria-hidden="true">Moon</span></a></li>
+          <li class="navs"><a href="#"><span aria-hidden="true">Mars</span></a></li>
+          <li class="navs"><a href="#"><span aria-hidden="true">Europa</span></a></li>
+          <li class="navs"><a href="#"><span aria-hidden="true">Titan</span></a></li>
+        </ul>
+      </nav>
+      <div class="text-description text-color">
+        <span class="title-destination">Moon</span>
+      </div>
+      <div class="text-description text-color">
+        <p class="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      </div>
+      <div class="last-data text-color">
+        <span class="">  Avg. distance
+          384,400 km</span>
+      </div>
+      <div class="last-data text-color">
+        <span class="">  Est. travel time
+          3 days</span>
+      </div>
+    </div>
+    <div class="img-holder">
+      <img src="../assets/destination/image-moon.png" alt="moon">
+    </div>
+  </section>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+  <script src="../js/functions.js"></script>
 </body>
 </html>

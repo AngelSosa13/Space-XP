@@ -268,6 +268,8 @@ body {
     }
 }
 
+/* Destinies */
+
 .destiny-section {
     grid-template-rows: repeat(2, auto);
     width: 88%;
@@ -306,4 +308,33 @@ body {
 
 .img-holder {
     grid-row: 2/2;
+}
+
+.destiny-nav {
+    float: right;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.destiny-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    --gap: clamp(1rem, 5vw, 1.5rem);
+    padding-inline: clamp(9rem, 10vw, 9rem);
+}
+
+.destiny-navigation a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.destiny-navigation a > [aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: 0.700rem;
+}
+
+.text-description {
+    grid-column-start: 1;
+    grid-column-end: 2;
 }

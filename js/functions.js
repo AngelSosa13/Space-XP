@@ -20,3 +20,4 @@ for (var i = 0; i < navs.length; i++) {
     this.className += " active";
   });
 }
+

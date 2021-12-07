@@ -1,12 +1,17 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     background-image: url('../assets/home/background-home-desktop.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+}
+
+.bellefair{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellefair', serif;
 }
 
 .flex {
@@ -20,6 +25,10 @@ body {
 
 .text-color {
     color: #D0D6F9;
+}
+
+.text-color-white {
+    color: #fff;
 }
 
 /* HEADER */
@@ -177,6 +186,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 2rem;
     line-height: 2.313rem;
+    text-transform: uppercase;
 }
 
 @media (min-width: 60em) and (max-width: 80em) {
@@ -272,16 +282,16 @@ body {
 
 .destiny-section {
     grid-template-rows: repeat(2, auto);
-    width: 88%;
+    width: 77%;
     margin: auto;
     margin-top: 3rem;
     height: auto;
     gap: 3rem;
+    margin-right: 8%;
 }
 
 .choose-destination {
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column: 2/2;
     grid-row: 1/1;
 }
 
@@ -297,23 +307,29 @@ body {
 
 .wrapper-content {
     grid-template-columns: repeat(2, 1fr);
-    grid-column: 2/2;
+    grid-column: 3/3;
     gap: 2rem;
     grid-row: 2/2;
 }
 
 .last-data {
-    grid-row: 4;
+    margin: auto;
+    margin-left: 0;
+}
+
+.distance {
+    font-size: 2.2rem;
 }
 
 .img-holder {
     grid-row: 2/2;
+    margin-top: 3rem;
+    grid-column: 2/2;
 }
 
 .destiny-nav {
     float: right;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 2/2;
 }
 
 .destiny-navigation {
@@ -321,7 +337,7 @@ body {
     padding: 0;
     margin: 0;
     --gap: clamp(1rem, 5vw, 1.5rem);
-    padding-inline: clamp(9rem, 10vw, 9rem);
+    padding-inline: clamp(.2rem, 10vw, .3rem);
 }
 
 .destiny-navigation a {
@@ -335,6 +351,25 @@ body {
 }
 
 .text-description {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 2/2;
+}
+
+.contents-wrap {
+    grid-row: 4/4;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2/2;
+}
+
+.border-bottom-grey {
+    border-bottom: 1px solid #4f5056;
+}
+
+.num {
+    grid-column: 1/1;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
 }

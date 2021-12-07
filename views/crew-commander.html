@@ -3,36 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/crew.css" type="text/css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="moon-body">
   <header class="menu-header flex">
     <div>
-      <img src="assets/shared/logo.svg" alt="logo-img" class="logo">     
+      <a href="#">
+        <img src="../assets/shared/logo.svg" alt="logo-img" class="logo">
+      </a>  
     </div>
     <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
       <span class="sr-only"></span>
     </button> 
     <nav>
       <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-        <li class="navs active"><a href="#"><span aria-hidden="true">01</span>Home</a></li>
-        <li class="navs"><a href="#"><span aria-hidden="true">02</span>Destination</a></li>
-        <li class="navs"><a href="#"><span aria-hidden="true">03</span>Crew</a></li>
-        <li class="navs"><a href="#"><span aria-hidden="true">04</span>Technology</a></li>
+        <li class="navs"><a href="../index.html"><span aria-hidden="true">00</span>Home</a></li>
+        <li class="navs"><a href="../views/destination-moon.html"><span aria-hidden="true">01</span>Destination</a></li>
+        <li class="navs active"><a href="#"><span aria-hidden="true">02</span>Crew</a></li>
+        <li class="navs"><a href="#"><span aria-hidden="true">03</span>Technology</a></li>
       </ul>
     </nav>
   </header>
+  <section class="destiny-section crew-section">
+    <div class="first-wrap grid">
+      <div class="meet-crew">
+        <span class="choose-span text-color"><span class="choose-span text-color num mr-1">02</span>Meet your crew</span>
+      </div>
+      <div class="wrapper-content-crew grid">
+        <div class="text-description-crew text-color">
+          <span class="title-crew-member bellefair">COMMANDER</span>
+        </div>
+        <div class="text-description-crew text-color-white">
+          <span class="title-crew bellefair">DOUGLAS HURLEY</span>
+        </div>
+        <div class="text-description-crew text-color">
+          <p class="description">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.</p>
+        </div>
+      </div>
+      <div class="indicators-container">
+        <ul class="indicators-crew">
+          <a class="" href="#"><li class="indicators active-crew"></li></a>
+          <a class="" href="crew-engineer.html"><li class="indicators"></li></a>
+          <a class="" href="crew-pilot.html"><li class="indicators"></li></a>
+          <a class="" href="crew-specialist.html"><li class="indicators"></li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="img-holder-crew">
+      <img src="../assets/crew/image-douglas-hurley.webp" alt="commander">
+    </div>
+  </section>
 
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+  <script src="../js/functions.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@ const nav = document.querySelector(".primary-navigation");
 const navBtn = document.querySelector(".menu-toggle");
 var navs = nav.getElementsByClassName("navs");
 const crewNav = document.querySelector("indicators-crew");
+var techNav = document.querySelector("span-nav");
 
 
 navBtn.addEventListener('click', ()=>{
@@ -25,9 +26,17 @@ for (var i = 0; i < navs.length; i++) {
 
 for (var i = 0; i < crewNav.length; i++) {
   crewNav[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("active-crew");
+    current[0].className = current[0].className.replace(" active-crew", "");
+    this.className += " active-crew";
+  });
+}
+
+for (var i = 0; i < techNav.length; i++) {
+  techNav[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active-tech");
+    current[0].className = current[0].className.replace(" active-tech", "");
+    this.className += " active-tech";
   });
 }
 

@@ -377,8 +377,7 @@ body {
 
 /* Crew */
 
-.crew-section {
-    display: flex;
+.gap-10 {
     gap: 10rem;
 }
 
@@ -447,4 +446,60 @@ body {
 
 .mr-1 {
     margin-right: 1rem;
+}
+
+/*tech*/
+
+.tech-section {
+    width: 90%;
+    margin-right: 0;
+}
+
+.span-nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: fit-content;
+    gap: 5rem;
+    align-self: center;
+}
+
+.span-nav > a {
+    text-decoration: none;
+}
+
+.nav-span {
+    background-color: transparent;
+    padding: 1.2rem 1.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(148, 148, 148, 0.767);
+    color: rgba(148, 148, 148, 0.767);
+    list-style: none;
+}
+
+.nav-span:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.active-tech {
+    background-color: #fff;
+    color: #000;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.space-launch {
+    width: 77%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.width-33 {
+    width: 33%;
 }
